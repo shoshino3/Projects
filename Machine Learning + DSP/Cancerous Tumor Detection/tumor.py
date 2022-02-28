@@ -35,21 +35,21 @@ def dim_reduce(batch_x):
     
     
     
-    print(np.shape(batch_x))
+   print(np.shape(batch_x))
     
-   # inc_pca = PCA(n_components = 0.9) 
+   inc_pca = PCA(n_components = 0.9) 
     
     
        
     
-   # inc_pca.fit_transform(batch_x)
-   # pk.dump(inc_pca, open("pca.pkl","wb"))
+   inc_pca.fit_transform(batch_x)
+   pk.dump(inc_pca, open("pca.pkl","wb"))
     
     """
     with open('pca.pkl', 'rb') as pickle_file:
             pca = pk.load(pickle_file)
     """
-    inc_pca = pk.load(open("pca.pkl",'rb'))
+    #inc_pca = pk.load(open("pca.pkl",'rb'))
 
     X_reduced =inc_pca.fit_transform(batch_x)
     
@@ -90,14 +90,14 @@ print(np.shape(Y_train))
 print(np.shape(X_test))
 print(np.shape(Y_test))
 
-""" training 
+""" training """" 
 print("training started....")
 clf = svm.SVC(kernel='rbf', gamma = "scale" ,C= 1) # compiling model
 clf.fit(X_train, Y_train) #Train the model using the training sets
 dump(clf,'saved_weights.joblib')  #saving the vector
 print("training done...")
 
-"""
+
 """ testing """
 print("Now testing....")
 
@@ -121,7 +121,7 @@ print("Confusion Matrix:\n")
 cm = confusion_matrix(Y_test, y_pred, labels=clf_svm.classes_)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=clf_svm.classes_)
 disp.plot()
-disp.save("confusion_matrix.jpeg") 
+
 
 
 
