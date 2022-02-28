@@ -1,0 +1,1 @@
+Designed a program in C++ using vectors which hashes, searches, inserts, sorts, updates, and checks the validity of large number of license plates while also processing the fines associated with them.
