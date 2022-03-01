@@ -23,7 +23,7 @@
   ![03](https://user-images.githubusercontent.com/80914380/156063051-411e477f-189f-4a33-a3d3-9c05d2631a2b.JPG)
 
   2) Used the RBF Kernel of SVM to classify the images into two classes - cancerous and non-cancerous. 
-    #### RBF = Radial Basis Function with gamma = "scale" ( = 1 / (n_features * X.var()))
+  #### RBF = Radial Basis Function with gamma = "scale" ( = 1 / (n_features * X.var()))
  
  
 ## **Accuracy = 94%** 
