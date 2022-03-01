@@ -37,13 +37,13 @@ def dim_reduce(batch_x):
     
    print(np.shape(batch_x))
     
-   inc_pca = PCA(n_components = 0.9) 
+   pca = PCA(n_components = 0.9) 
     
     
        
     
-   inc_pca.fit_transform(batch_x)
-   pk.dump(inc_pca, open("pca.pkl","wb"))
+   pca.fit_transform(batch_x)
+   pk.dump(pca, open("pca.pkl","wb"))
     
     """
     with open('pca.pkl', 'rb') as pickle_file:
@@ -51,7 +51,7 @@ def dim_reduce(batch_x):
     """
     #inc_pca = pk.load(open("pca.pkl",'rb'))
 
-    X_reduced =inc_pca.fit_transform(batch_x)
+    X_reduced = pca.fit_transform(batch_x)
     
     
 
@@ -60,7 +60,7 @@ def dim_reduce(batch_x):
 
 
 
-path_batch = glob.glob('Training/*.jpeg')
+path_batch = glob.glob('datasets/*.jpeg')
 list_batch = []
 
 print("..reading data.... ")
