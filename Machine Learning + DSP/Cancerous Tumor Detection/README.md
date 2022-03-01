@@ -8,8 +8,8 @@
   https://academictorrents.com/details/7a638ed187a6180fd6e464b3666a6ea0499af4af
 
 ### **Target Labels:**
-  Class 0: Tumor is cancerous. 
-  Class 1: Tumor is not cancerous 
+  **Class 0:** Tumor is cancerous. 
+  **Class 1:** Tumor is not cancerous 
 
 
 ### **Method:** 
