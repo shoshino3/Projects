@@ -1,6 +1,6 @@
 ### **Introduction:** 
 
-  It goes without saying how machine learning is a heavily researched field today. And there is a good reason why. Machine learning has proven itself as a magical tool - it is amazing to see what a bunch of numbers in the form of clean data can do. This is the reason why I wanted to do a project which could have a popularity in its application. This project is about determining if the benign colon tumor is cancerous or not. Using SVM to do MNIST digit classification has been quite popular for some time. The inspired me to do the same, but instead, with the jpeg format images of the MRI images of benign colon tumor.
+  It goes without saying how machine learning is a heavily researched field today. And there is a good reason why. Machine learning has proven itself as a magical tool - it is amazing to see what a bunch of numbers in the form of clean data can do. This is the reason why I wanted to do a project which could have a popularity in its application. This project is about determining if the benign colon tumor is cancerous or not. Using SVM to do MNIST digit classification has been quite popular for some time. This inspired me to do the same, but instead, with the jpeg format images of the MRI images of benign colon tumor.
 
 ### **Dataset:** 
 
