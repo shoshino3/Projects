@@ -7,7 +7,7 @@ Some people disliked the idea of "policing people". However, the reason why I su
 
 
 ## •HOW did we make it? 
-We used the SSD-MobilenetV2 architecture which was implemented with TensorFlow. We chose this architecure to help us train our model without having to use GPU. 
+We used the SSD-MobilenetV2 architecture which was implemented with TensorFlow. We chose this architecure to help us train our model without having to use GPU. We gathered our own image data, and then used the ImageDataGenerator to augment and generate more images for both training and testing purposes. We then annotated the images with two different labels (classes) - "OnPhone" and "NotOnPhone" using labelImg. 
 
 
 
